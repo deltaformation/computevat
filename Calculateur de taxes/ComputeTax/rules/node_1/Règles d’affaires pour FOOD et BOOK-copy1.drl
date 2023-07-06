@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Règles d’affaires pour FOOD et BOOK-copy1</name>
+  <uuid>6b54e4e5-ff10-4fca-b0fd-2d024d95fb2a</uuid>
+  <locale>fr_FR</locale>
+  <definition><![CDATA[si
+	les Types de Produits contient FOOD 
+	et le name de Pays est "Germany" 
+alors
+	affecter à décision un nouveau taxrate tel que
+		le tax est 7;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

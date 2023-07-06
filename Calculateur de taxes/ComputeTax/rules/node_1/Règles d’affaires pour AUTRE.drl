@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Règles d’affaires pour AUTRE</name>
+  <uuid>5b63f870-cae5-41c9-ae83-614e0502579f</uuid>
+  <locale>fr_FR</locale>
+  <definition><![CDATA[si
+	les Types de Produits ne contient pas BOOK et
+    les Types de Produits ne contient pas FOOD
+	et le name de Pays est "Germany" 
+alors
+	affecter à décision un nouveau taxrate tel que
+		le tax est 19;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="ComputeTax">
+  <name>ComputeTax</name>
+  <uuid>64de8605-5d27-419e-ba3d-4cc1fa29d1c4</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#595f2dca-9955-43c1-90e8-5bc986bf10d0"/>
+  <targetRuleProject href="../../ComputeTax#5796d763-ad13-4baa-ad9a-be171376048c"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["ComputeTax"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

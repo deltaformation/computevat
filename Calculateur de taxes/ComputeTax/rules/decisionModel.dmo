@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>595f2dca-9955-43c1-90e8-5bc986bf10d0</uuid>
+  <locale>fr_FR</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="fr_FR"/>
+    </extensionElements>
+    <inputData id="node_0" name="Produits">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product" collection="false" name="Produits"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Produits" typeRef="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product"/>
+    </inputData>
+    <decision id="node_1" name="Décision de tax">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product" collection="false" name="Produits"/>
+                <input bomType="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Country" collection="false" name="Pays"/>
+                <output bomType="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Taxrate" collection="false" name="Décision de tax"/>
+                <rule defaultRule="false" href="node_1/Règles%20d’affaires%20pour%20FOOD%20et%20BOOK-copy1.drl" kind="BusinessRule" name="Règles d’affaires pour FOOD et BOOK-copy1"/>
+                <rule defaultRule="false" href="node_1/Règles%20d’affaires%20pour%20FOOD%20et%20BOOK.drl" kind="BusinessRule" name="Règles d’affaires pour FOOD et BOOK"/>
+                <rule defaultRule="false" href="node_1/Règles%20d’affaires%20pour%20AUTRE.drl" kind="BusinessRule" name="Règles d’affaires pour AUTRE"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Décision de tax" typeRef="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Taxrate"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Pays">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Country" collection="false" name="Pays"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Pays" typeRef="cp4admin.calculdetax.calculateur_de_taxes.datamodel.Country"/>
+    </inputData>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
