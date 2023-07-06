@@ -6,22 +6,10 @@ cp4admin.calculdetax.calculateur_de_taxes.datamodel.Country.name#phrase.action =
 cp4admin.calculdetax.calculateur_de_taxes.datamodel.Country.name#phrase.navigation = {name} {this,PARTITIVE_ARTICLE}
 
 # cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product#concept.label = Product
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.Product(java.lang.String,java.util.List)#phrase.navigation = un nouveau {Product} tel que {0, id} {1, Type}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.addTo_types(cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType)#phrase.action = ajouter {0} à la liste des Types {this,PARTITIVE_ARTICLE}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.clear_types()#phrase.action = effacer les Types {this,PARTITIVE_ARTICLE}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.id#phrase.action = assigner l'id {this,PARTITIVE_ARTICLE} à {id}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.id#phrase.navigation = {id} {this,PARTITIVE_ARTICLE}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.removeFrom_types(cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType)#phrase.action = retirer {0} de la liste des Types {this,PARTITIVE_ARTICLE}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.types#phrase.action = assigner les Types {this,PARTITIVE_ARTICLE} à {Type}
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.types#phrase.navigation = {Type} {this,PARTITIVE_ARTICLE}
-
-# cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType#concept.label = ProductType
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType.BOOK#instance.documentation = 
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType.BOOK#instance.label = BOOK
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType.ELE#instance.label = ELE
-cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType.FOOD#instance.label = FOOD
+cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product#concept.label = product
+cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.Product(java.lang.String)#phrase.navigation = un nouveau {product} tel que {0, producttype}
+cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.producttype#phrase.action = assigner le producttype {this,PARTITIVE_ARTICLE} à {producttype}
+cp4admin.calculdetax.calculateur_de_taxes.datamodel.Product.producttype#phrase.navigation = {producttype} {this,PARTITIVE_ARTICLE}
 
 # cp4admin.calculdetax.calculateur_de_taxes.datamodel.Taxrate
 cp4admin.calculdetax.calculateur_de_taxes.datamodel.Taxrate#concept.label = taxrate

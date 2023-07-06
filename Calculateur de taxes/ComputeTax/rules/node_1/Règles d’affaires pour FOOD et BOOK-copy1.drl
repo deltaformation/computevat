@@ -4,7 +4,7 @@
   <uuid>6b54e4e5-ff10-4fca-b0fd-2d024d95fb2a</uuid>
   <locale>fr_FR</locale>
   <definition><![CDATA[si
-	les Types de Produits contient FOOD 
+	le producttype de Produits contient "FOOD" 
 	et le name de Pays est "Germany" 
 alors
 	affecter à décision un nouveau taxrate tel que

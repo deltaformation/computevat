@@ -4,8 +4,8 @@
   <uuid>5b63f870-cae5-41c9-ae83-614e0502579f</uuid>
   <locale>fr_FR</locale>
   <definition><![CDATA[si
-	les Types de Produits ne contient pas BOOK et
-    les Types de Produits ne contient pas FOOD
+	le producttype de Produits ne contient pas "BOOK" et
+    le producttype de Produits ne contient pas "FOOD" 
 	et le name de Pays est "Germany" 
 alors
 	affecter à décision un nouveau taxrate tel que

@@ -21,56 +21,21 @@ public class Country
 }
 
 public class Product
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Product"
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "product"
         property "de.generated" "true"
 {
-    public string id
+    public string producttype
                 property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "producttype"
                 property update "true";
-    public java.util.List types domain 0,* class cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Types"
-                property update "true";
-    public Product(string id, 
-        java.util.List types domain 0,* class cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType)
+    public Product(string producttype)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public Product()
                 property "dataio.default" "true";
-    public void addTo_types(cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType types)
-                property collectionAttribute "types"
-                property update "true";
-    public void clear_types()
-                property collectionAttribute "types"
-                property update "true";
-    public void removeFrom_types(cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType types)
-                property collectionAttribute "types"
-                property update "true";
-    public void set_types(java.util.Collection types domain 0,* class cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType)
-                property collectionAttribute "types"
-                property update "true";
-}
-
-public class ProductType
-        extends java.lang.Enum
-        property "ads.typeId" "2"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "ProductType"
-        property "de.generated" "true"
-{
-    domain {static BOOK, static ELE, static FOOD}
-    public static final readonly cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType BOOK
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "BOOK";
-    public static final readonly cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType ELE
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ELE";
-    public static final readonly cp4admin.calculdetax.calculateur_de_taxes.datamodel.ProductType FOOD
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FOOD";
 }
 
 public class Taxrate
